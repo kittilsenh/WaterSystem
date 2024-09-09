@@ -253,15 +253,25 @@ const SmartDrain = () => {
                       </div>
                   </div>
 
-                    {/* Floating div for visual effect (top) */}
+                {/* Floating div for visual effect (top) */}
                 <div className="floating-div-top">
                   <div className="extra-border-top"></div> {/* Extra border at the top with vertical lines */}
                 </div>
 
-                  {/* Floating div for visual effect */}
-                  <div className="floating-div">
-                    <div className="extra-border"></div> {/* Example border extension */}
-                  </div>
+                {/* New thinner floating div in the middle of the water tank */}
+                <div className="floating-div-middle">
+                  <div className="extra-border-middle"></div>
+                </div>
+
+                {/* New green floating div for visibility */}
+                <div className="floating-div-green">
+                  <div className="extra-border-green"></div>
+                </div>
+
+                {/* Floating div for visual effect */}
+                <div className="floating-div">
+                  <div className="extra-border"></div> {/* Example border extension */}
+                </div>
               </div> {/* Close water-tank-container */}
             </Card.Body>
              

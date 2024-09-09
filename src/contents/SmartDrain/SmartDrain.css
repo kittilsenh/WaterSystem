@@ -5,9 +5,6 @@
     border: 2px solid black !important;
   }
 
-.tank-container {
-    /* border: 5px solid black; */
-}
 
 /* Water tank styling */
 /* Water tank styling */
@@ -274,6 +271,42 @@
     right: -170px; /* Position the right horizontal line */
 }
 
+/* New middle floating div - thinner and centered vertically */
+.floating-div-middle {
+    position: absolute;
+    top: 5%; /* Position in the middle of the water tank */
+    transform: translateY(-50%); /* Center it vertically */
+    width: 160%;
+    display: flex;
+    justify-content: center;
+    z-index: 2; /* Ensure it stays above the water tank */
+  }
+  
+  .extra-border-middle {
+    height: 30px; /* Thinner height compared to the top */
+    border-left: 45px solid grey; /* Thinner border */
+    border-right: 45px solid grey; /* Thinner border */
+    width: 62.5%;
+  }
+
+  /* New green floating div */
+.floating-div-green {
+    position: absolute;
+    top: 8.4%; /* Adjust this to move it as needed */
+    transform: translateY(-50%);
+    width: 130%;
+    display: flex;
+    justify-content: center;
+    z-index: 3; /* Ensure it stays on top of other divs */
+  }
+  
+  .extra-border-green {
+    height: 15px;
+    border-left: 35px solid grey; /* Green border */
+    border-right: 35px solid grey; /* Green border */
+    width: 62.5%;
+  }
+
 .buttonIncreaseDecrease {
     display: flex;
     justify-content: center; /* Center the buttons */
@@ -309,3 +342,4 @@ html, body {
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
