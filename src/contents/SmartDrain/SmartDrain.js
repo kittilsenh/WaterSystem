@@ -328,8 +328,8 @@ const SmartDrain = () => {
       {/* Graph Section */}
       <Row className="mt-5">
         <Col>
-          <h4 className="text-center">GRAPH 01 - DAY CHART</h4>
-          <div className="graph-placeholder" style={{ height: '200px', border: '1px solid black' }}></div>
+          
+          <div className="graph-placeholder" style={{ height: '200px', border: '1px solid black' }}><h4 className="text-center-h4">GRAPH 01 - DAY CHART</h4></div>
         </Col>
       </Row>
     </Container>

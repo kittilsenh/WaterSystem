@@ -125,6 +125,13 @@
     margin-top: 10px;
     float: right;
   }
+
+  /* Lean the labels slightly to the right */
+.sensor-labels p {
+    text-align: right;
+    margin-bottom: 5px;
+    display: inline-block; /* Ensure the transformation applies properly */
+}
   
   .sensor-labels p, .sensor-values p {
     margin: 0;
@@ -150,6 +157,7 @@
     padding: 20px;
     position: relative;
     height: 200px; /* Ensure a fixed height for easier layout control */
+    text-align: right;
   }
 
 /* Right-align sensor values */
@@ -166,6 +174,15 @@
     display: flex;
     flex-direction: column;
   }
+
+  /* Adjust individual labels */
+.sensor-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the labels vertically */
+    align-items: flex-end; /* Align the labels to the right */
+    padding-right: 20px; /* Add some padding on the right side */
+}
   
   .sensor-labels p, .sensor-values p {
     margin: 0;
@@ -176,6 +193,7 @@
   .sensor-labels p {
     text-align: left;
     margin-bottom: 5px;
+    text-align: right;
   }
   
   .sensor-values p {
@@ -198,7 +216,7 @@
     position: absolute;
     bottom: 10px;
     left: 20px;
-    font-weight: normal;
+    font-weight: bold;
   }
 
   /* Position Date and Time on the bottom-right */
@@ -278,4 +296,8 @@ html, body {
 .smart-drain-system {
     min-height: 100vh; /* Make sure the container takes the full height */
     padding-bottom: 20px; /* Add some padding at the bottom so content doesn't stick to the bottom edge */
+}
+
+.text-center-h4 {
+    margin-top: 20px; /* Add space above the heading */
 }
