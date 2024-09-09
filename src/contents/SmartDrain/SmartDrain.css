@@ -1,0 +1,281 @@
+/* Remove the border around the parent card */
+.parent-card {
+    padding: 50px;
+    margin-bottom: 20px;
+    border: 2px solid black !important;
+  }
+
+.tank-container {
+    /* border: 5px solid black; */
+}
+
+/* Water tank styling */
+/* Water tank styling */
+.water-tank-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1; /* Keep above the floating div */
+}
+
+/* Water tank styling */
+.water-tank {
+    width: 250px;
+    height: 220px;
+    border-left: 25px solid gray; /* Thicker left side */
+    border-right: 25px solid gray; /* Thicker right side */
+    border-bottom: 32px solid gray; /* Thicker bottom */
+    border-top: 25px solid lightgrey; /* Thin top */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 auto; /* Centralize the tank */
+  }
+  
+  .water-level {
+    background-color: #00aaff;
+    height: 60%; /* Adjust the height to change the water level */
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    text-align: left;
+    padding-top: 10px;
+    font-size: 24px;
+  }
+
+/* Dimensions under the tank */
+.dimensions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+  }
+
+  /* Labels for measurements */
+.measurement {
+    position: absolute;
+    font-size: 12px;
+    color: black;
+  }
+  
+  .measurement.vertical {
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .measurement.horizontal {
+    bottom: -2.5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .graph-placeholder {
+    height: 200px;
+    border: 2px solid black;
+  }
+  
+  /* General styling */
+.sensor-card {
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    border: 1px solid black;
+  }
+  
+  /* Sensor header positioned above the card */
+.sensor-header {
+    position: absolute;
+    top: -20px; /* Move the header outside the card */
+    right: 20px; /* Keep the header aligned to the right */
+    background-color: white; /* Add a background to avoid overlap */
+    padding: 0 10px; /* Padding to make it visually separate from the card */
+    font-weight: bold;
+    z-index: 1; /* Ensure the header is above the card */
+  }
+  
+  .sensor-card {
+    position: relative; /* Needed for the absolute positioning of the header */
+    padding-top: 40px; /* Adjust padding to leave space for the header */
+    border: 1px solid black;
+  }
+  
+/* Adjust the flexbox layout for the labels */
+.sensor-info {
+    display: flex;
+    justify-content: space-between; /* Separate the labels and values */
+    align-items: flex-start; /* Align them to the top initially */
+    height: 100%;
+    padding-bottom: 20px;
+    position: relative; /* Needed for absolute positioning */
+  }
+  
+/* Align sensor labels like SPEED, FLOW RATE, and WATER DEPTH */
+.sensor-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align at the top */
+    align-items: flex-start; /* Align to the left */
+    padding-left: 20px; /* Add padding for left spacing */
+    margin-top: 10px;
+    float: right;
+  }
+  
+  .sensor-labels p, .sensor-values p {
+    margin: 0;
+    padding: 5px 0;
+  }
+  
+/* Sensor card general styling */
+.sensor-card {
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    border: 1px solid black;
+  }
+  
+  .sensor-title {
+    font-weight: bold;
+  }
+  
+  /* Adjust the sensor info container */
+.sensor-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    height: 200px; /* Ensure a fixed height for easier layout control */
+  }
+
+/* Right-align sensor values */
+.sensor-values {
+    text-align: right;
+  }
+
+/* Right-align sensor values like DATE and TIME */
+.sensor-values {
+    text-align: right;
+    position: absolute;
+    bottom: 10px;
+    right: 260px; /* Move it a bit to the left */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sensor-labels p, .sensor-values p {
+    margin: 0;
+    padding: 5px 0;
+    font-weight: normal;
+  }
+  
+  .sensor-labels p {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  .sensor-values p {
+    text-align: right;
+    margin-bottom: 5px;
+  }
+  
+  /* Optional: Padding, margins, and spacing adjustments */
+  .sensor-card {
+    position: relative; /* Ensure that the header can be positioned absolutely inside the card */
+    padding-top: 50px; /* Adjust padding to leave space for the header */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border: 1px solid black;
+  }
+  
+/* Position Battery Level on the bottom-left */
+.battery-label {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-weight: normal;
+  }
+
+  /* Position Date and Time on the bottom-right */
+.date-time {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    text-align: right;
+  }
+
+/* Floating div for extra visual elements */
+.floating-div {
+    position: absolute;
+    top: -80%; /* Adjust so it stays aligned under the water tank */
+    bottom: 100%;
+    width: 160%;
+    display: flex;
+    justify-content: center;
+}
+  
+  .extra-border {
+    height: 200px; /* Visual height for the extra border effect */
+    border-left: 25px solid gray;
+    border-right: 25px solid gray;
+    width: 62.5%;
+  }
+
+  
+/* Centralize the tank container */
+.tank-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Takes full height of viewport */
+    position: relative;
+}
+
+/* Add horizontal lines at the top of the tank */
+.water-tank::before,
+.water-tank::after {
+    content: "";
+    position: absolute;
+    top: -200.5px; /* Align with the top of the tank */
+    width: 170px; /* Length of the horizontal lines */
+    height: 5px; /* Thickness of the horizontal lines */
+    background-color: black; /* Same color as the top border */
+}
+
+.water-tank::before {
+    left: -170px; /* Position the left horizontal line */
+}
+
+.water-tank::after {
+    right: -170px; /* Position the right horizontal line */
+}
+
+.buttonIncreaseDecrease {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    margin-top: 10px; /* Space above the buttons */
+}
+
+.buttonIncreaseDecrease .btn {
+    margin-top: 200px; /* Add space between the tank and buttons */
+    height: 100px;
+    width: 150px;
+    display: flex;
+    justify-content: center; /* Ensure the buttons are centered */
+
+}
+html, body {
+    height: 100%;
+    overflow-y: auto; /* Ensure vertical scrolling */
+}
+
+.smart-drain-system {
+    min-height: 100vh; /* Make sure the container takes the full height */
+    padding-bottom: 20px; /* Add some padding at the bottom so content doesn't stick to the bottom edge */
+}
