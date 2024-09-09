@@ -301,3 +301,11 @@ html, body {
 .text-center-h4 {
     margin-top: 20px; /* Add space above the heading */
 }
+
+/* make it bigger */
+.Headline {
+    font-size: 5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

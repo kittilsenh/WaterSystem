@@ -29,7 +29,7 @@ const SmartDrain = () => {
       {/* Title Section */}
       <Row>
         <Col>
-          <h1 className="text-center my-4">SMART DRAIN WATER SYSTEM</h1>
+          <h1 className="Headline">SMART DRAIN WATER SYSTEM</h1>
         </Col>
       </Row>
 
