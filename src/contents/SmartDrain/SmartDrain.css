@@ -23,7 +23,7 @@
     border-left: 25px solid gray; /* Thicker left side */
     border-right: 25px solid gray; /* Thicker right side */
     border-bottom: 32px solid gray; /* Thicker bottom */
-    border-top: 25px solid lightgrey; /* Thin top */
+    border-top: 14px solid lightgrey; /* Thin top */
     position: relative;
     display: flex;
     justify-content: center;
@@ -257,7 +257,7 @@
 .water-tank::after {
     content: "";
     position: absolute;
-    top: -200.5px; /* Align with the top of the tank */
+    top: -195px; /* Align with the top of the tank */
     width: 170px; /* Length of the horizontal lines */
     height: 5px; /* Thickness of the horizontal lines */
     background-color: black; /* Same color as the top border */
